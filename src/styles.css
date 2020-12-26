@@ -1,0 +1,71 @@
+.authbtn{
+    margin:4px;
+
+}
+
+.head{
+    background-color: rgb(255, 21, 21);
+    padding: 10px;
+    color:white;
+    text-decoration-line:unset
+}
+.headlink{
+    background-color: rgb(255, 21, 21);
+    color:white;
+    padding: 10px;
+    margin:0p
+}
+
+.listAll{
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.HeadingTable{
+    text-align: center;
+    margin: 20px;
+    color:rgb(25, 255, 25);
+    -webkit-text-stroke: 0.75px black;
+    text-decoration-line:underline;
+    text-decoration-color: rgb(25, 255, 25);
+
+}
+
+.listAll.mg{
+    margin-left:20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    }
+
+.footer{
+        color:red;
+        text-align: center;
+    }
+    .footerimg{
+        display: block;
+        margin-top:20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 2.5%;    
+    }
+
+.react_listAll{
+    margin-left:20px;
+    margin-top:20px;
+    margin-bottom:10px;
+    
+    
+}
+
+.list-group-item {
+    border-color: white;
+}
+
+.editBtnList{
+    display: flex;
+}
+
+.editList{
+    margin-left: 10px;
+}
