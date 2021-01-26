@@ -1,10 +1,9 @@
 import UserContext from "./userContext";
 import db from '../firebase';
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Button, Form } from "react-bootstrap";
 
-import firebase from "firebase";
-import { Route, Switch, BrowserRouter, useHistory } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 const bcrypt = require("bcryptjs");
 
 

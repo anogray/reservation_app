@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext} from 'react';
 import UserContext  from "./userContext";
 
-import {Route, Switch, BrowserRouter,useHistory, Redirect  } from "react-router-dom";
+import {useHistory  } from "react-router-dom";
 
 import db from '../firebase';
-import firebase from "firebase";
-import { Button, Form, ListGroup } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const DeleteReservation = ()=>{
 
@@ -13,8 +12,7 @@ const DeleteReservation = ()=>{
     const history = useHistory();
     const { userData, setUserData } = useContext(UserContext);
 
-    if(userData.email===undefined && userData.password===undefined)
-    history.push("/allreservations")
+    if(userData.email===undefined && userData.password===undefined) history.push("/allreservations")
 
     useEffect(() => {
 

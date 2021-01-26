@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useContext} from 'react';
 import UserContext  from "./userContext";
 import db from '../firebase';
-import firebase from "firebase";
-import {Route, Switch, BrowserRouter,useHistory  } from "react-router-dom";
-import { Button, Form } from "react-bootstrap";
+import {useHistory  } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import "../styles.css"
 
 
@@ -16,11 +15,10 @@ const Reserves = () => {
     const history = useHistory();
 
     
-    if(userData.email===undefined && userData.password===undefined)
-    history.push("/allreservations")
+    if(userData.email===undefined && userData.password===undefined) history.push("/allreservations")
 
     console.log("hello fxn")
-    let rdrData = "no Property array"
+    
     
     useEffect(() => {
 
@@ -77,11 +75,9 @@ const Reserves = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(e.target.name==="delete")
-        history.push("/deletereservation")
+        if(e.target.name==="delete") history.push("/deletereservation")
 
-        if(e.target.name==="edit")
-        history.push("/editreservations")
+        if(e.target.name==="edit") history.push("/editreservations")
 
     }
     let editBar = <Button name="edit" className="authbtn" onClick={handleSubmit}> Edit</Button>

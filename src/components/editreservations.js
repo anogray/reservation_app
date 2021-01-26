@@ -1,10 +1,8 @@
-import {Route, Switch, BrowserRouter,useHistory, Redirect  } from "react-router-dom";
+import {useHistory  } from "react-router-dom";
 import React, { useState, useEffect, useContext} from 'react';
 import db from '../firebase';
-import firebase from "firebase";
-import EditCustomer from "./editCustomer"
 import UserContext  from "./userContext";
-import { Button, Form } from "react-bootstrap";
+import { Button, } from "react-bootstrap";
 
 
 const EditReservation = ()=>{
@@ -17,8 +15,7 @@ const EditReservation = ()=>{
     const { userData, setUserData } = useContext(UserContext);
 
     
-    if(userData.email===undefined && userData.password===undefined)
-    history.push("/allreservations")
+    if(userData.email===undefined && userData.password===undefined) history.push("/allreservations")
 
     
     useEffect(() => {

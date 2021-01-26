@@ -16,8 +16,7 @@ const Login = () => {
 
     const history = useHistory();
 
-    if(userData.email!==undefined && userData.password!==undefined)
-    history.push("/reservations")
+    if(userData.email!==undefined && userData.password!==undefined) history.push("/reservations")
  
     // let SnapShot = [];
     // let CollectionAdmins = []

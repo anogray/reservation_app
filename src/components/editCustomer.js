@@ -16,8 +16,7 @@ const EditCustomer =  (props) => {
     const history = useHistory();
     const { userData, setUserData } = useContext(UserContext);
 
-    if(userData.email===undefined && userData.password===undefined)
-    history.push("/allreservations")
+    if(userData.email===undefined && userData.password===undefined) history.push("/allreservations")
 
     useEffect(() => {
         
